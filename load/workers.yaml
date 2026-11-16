@@ -1,0 +1,3 @@
+services:
+  app:
+    command: ["python", "-m", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8083", "--workers", "${LOAD_WORKERS:-2}", "--no-access-log"]
